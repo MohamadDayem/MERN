@@ -16,7 +16,7 @@ const Create = () => {
             number: number,
             status: status
         })
-        .then((res) => navigate(`${res.data._id}`))
+        .then((res) => navigate(`/${res.data._id}`))
         .catch(err => {
             const errorResponse = err.response.data.errors;
             const errorArr = [];
