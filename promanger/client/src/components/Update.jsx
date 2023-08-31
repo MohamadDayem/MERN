@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
-const Edit = () => {
+const Update = () => {
 	const { id } = useParams();
 	const navigate = useNavigate();
 	const [ pro, setpro ] = useState({});
@@ -56,4 +56,4 @@ const Edit = () => {
 	);
 }
 
-export default Edit;
+export default Update;
